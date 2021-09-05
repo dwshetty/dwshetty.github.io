@@ -1,0 +1,2 @@
+(this.webpackJsonpdwshetty=this.webpackJsonpdwshetty||[]).push([[4],{43:function(e,t,s){e.exports={h3:"styles_h3__1r8BP",h2:"styles_h2__1IfU_"}},50:function(e,t,s){"use strict";s.r(t);var c=s(2),h=s(43),n=s.n(h),a=s(0);t.default=function(){var e=Object(c.f)();return Object(a.jsxs)(a.Fragment,{children:[Object(a.jsx)("h2",{className:n.a.h2,children:"Page not found"}),Object(a.jsxs)("h3",{className:n.a.h3,children:["No match for ",Object(a.jsx)("code",{children:e.pathname})]})]})}}}]);
+//# sourceMappingURL=NoMatch.ac4d5a97.chunk.js.map
