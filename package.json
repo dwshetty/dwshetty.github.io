@@ -41,7 +41,7 @@
     "format": "prettier --write src/*",
     "lint": "tsc --noEmit && eslint --ext js,jsx,ts,tsx src --fix",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
