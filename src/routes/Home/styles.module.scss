@@ -1,0 +1,223 @@
+@import "../../components/mixins.module.scss";
+
+.text-align-center {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include for-device(lgUp) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  h1 {
+    @extend .text-align-center;
+
+    i:global(.fa-smile-beam) {
+      color: skyblue;
+    }
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include for-device(smDown) {
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    .webDeveloperWrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .webDeveloper {
+        color: skyblue;
+        text-overflow: clip;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .webDeveloperOverlay {
+        display: flex;
+        position: absolute;
+        opacity: 1;
+        color: white;
+        background-color: white;
+        animation: toggle 5s linear 4s infinite normal;
+
+        .cursor {
+          position: relative;
+          bottom: 0.1em;
+          color: skyblue;
+          animation: blinking 625ms linear 0s infinite normal;
+          will-change: opacity;
+        }
+
+        .overlay {
+          display: flex;
+          width: 212px;
+        }
+      }
+    }
+  }
+
+  .pointsWrapper {
+    ul {
+      li {
+        transform: translateX(200%);
+        animation: slide-from-right 2s linear 1s 1 forwards;
+      }
+
+      li:first-child {
+        animation-delay: 0s;
+      }
+
+      li:last-child {
+        animation-delay: 2s;
+      }
+    }
+
+    blockquote {
+      color: gold;
+      text-shadow: 1px 1px 2px #000;
+    }
+  }
+
+  .meaning {
+    .bold {
+      font-weight: bold;
+    }
+
+    .responsive {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 0.5rem;
+      padding-top: 1rem;
+
+      i {
+        animation-delay: 4s;
+        animation-direction: normal;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      i:nth-child(1) {
+        color: red;
+        animation-name: zoom1;
+      }
+
+      i:nth-child(2) {
+        color: green;
+        animation-name: zoom2;
+      }
+
+      i:nth-child(3) {
+        color: blue;
+        animation-name: zoom3;
+      }
+
+      i:nth-child(4) {
+        color: orange;
+        animation-name: zoom4;
+      }
+    }
+  }
+
+  .leisure {
+    @extend .text-align-center;
+    color: purple;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes toggle {
+  0%,
+  10%,
+  90%,
+  100% {
+    left: 0;
+  }
+
+  33%,
+  67% {
+    left: 100%;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-from-right {
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px gold, 0 0 40px gold,
+      0 0 30px gold, 0 0 20px gold, 0 0 10px gold;
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink,
+      0 0 30px pink, 0 0 20px pink, 0 0 10px pink;
+  }
+}
+
+@keyframes zoom1 {
+  0%,
+  25% {
+    transform: scale(1);
+  }
+
+  12.5% {
+    transform: scale(2);
+  }
+}
+
+@keyframes zoom2 {
+  25%,
+  50% {
+    transform: scale(1);
+  }
+
+  37.5% {
+    transform: scale(2);
+  }
+}
+
+@keyframes zoom3 {
+  50%,
+  75% {
+    transform: scale(1);
+  }
+
+  62.5% {
+    transform: scale(2);
+  }
+}
+
+@keyframes zoom4 {
+  75%,
+  100% {
+    transform: scale(1);
+  }
+
+  87.5% {
+    transform: scale(2);
+  }
+}
