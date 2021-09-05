@@ -120,7 +120,7 @@ function Home(): JSX.Element {
       <h3 className={styles.leisure}>
         <div>
           In his leisure time, you will find him either cracking open a cold one
-          with the boys or surfing through social media for memes
+          with the boys or surfing social media for memes
         </div>
         <i className="far fa-grin-stars fa-lg" />
       </h3>
