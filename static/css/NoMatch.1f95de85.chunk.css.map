@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/routes/NoMatch/styles.module.scss"],"names":[],"mappings":"AAAA,oCACE,YAAa,CACb,iBAAkB,CACnB,kBAIC,eAAiB,CACjB,eAAgB","file":"NoMatch.1f95de85.chunk.css","sourcesContent":[".h3 {\r\n  color: tomato;\r\n  text-align: center;\r\n}\r\n\r\n.h2 {\r\n  @extend .h3;\r\n  font-weight: bold;\r\n  margin-top: 1rem;\r\n}\r\n"]}
