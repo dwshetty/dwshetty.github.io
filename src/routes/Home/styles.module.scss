@@ -136,7 +136,7 @@
   .leisure {
     @extend .text-align-center;
     color: purple;
-    animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out 4s infinite alternate;
   }
 }
 
