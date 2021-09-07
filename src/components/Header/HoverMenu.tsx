@@ -11,13 +11,13 @@ function Menu(): JSX.Element {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact" exact activeClassName={styles.selected}>
-          Contact
+        <NavLink to="/work" exact activeClassName={styles.selected}>
+          Work
         </NavLink>
       </li>
       <li>
-        <NavLink to="/work" exact activeClassName={styles.selected}>
-          Work
+        <NavLink to="/contact" exact activeClassName={styles.selected}>
+          Contact
         </NavLink>
       </li>
     </ul>
