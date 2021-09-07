@@ -35,6 +35,9 @@ jobs:
           echo Dependencies installed successfully!
 
       - name: Create new build
+        env:
+            REACT_APP_WEBSITE_TITLE: ${{ secrets.REACT_APP_WEBSITE_TITLE }}
+            REACT_APP_WEBSITE_DESCRIPTION: ${{ secrets.REACT_APP_WEBSITE_DESCRIPTION }}
         run: |
           yarn run build
           echo Build created successfully!
