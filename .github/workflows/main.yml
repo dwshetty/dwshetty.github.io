@@ -33,6 +33,14 @@ jobs:
         run: |
           yarn install
           echo Dependencies installed successfully!
+          
+      - name: Authenticate
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_branch: master-build
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
 
       # Runs a set of commands using the runners shell
       - name: Deploy latest build
