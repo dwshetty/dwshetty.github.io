@@ -40,7 +40,8 @@
     "serve:run": "yarn run build && yarn run serve",
     "format": "prettier --write src/*",
     "lint": "tsc --noEmit && eslint --ext js,jsx,ts,tsx src --fix",
-    "predeploy": "yarn run build",
+    "clean-gh": "rm -rf node_modules/.cache/gh-pages",
+    "predeploy": "yarn run clean-gh && yarn run build",
     "deploy": "gh-pages -b master-build -d build"
   },
   "eslintConfig": {
