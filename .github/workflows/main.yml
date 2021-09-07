@@ -27,14 +27,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Initiate new build
         run: echo New build initiated...
-          
-      - name: Authenticate
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_branch: master-build
-          # user_name: 'github-actions[bot]'
-          # user_email: 'github-actions[bot]@users.noreply.github.com'
         
       # Runs a set of commands using the runners shell
       - name: Install dependencies 
@@ -42,7 +34,17 @@ jobs:
           yarn install
           echo Dependencies installed successfully!
 
-      - name: Deploy latest build
+      - name: Create new build
         run: |
-          yarn run deploy
-          echo Build deployed successfully!
+          yarn run build
+          echo Build created successfully!
+
+      - name: Deploy latest build
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_branch: master-build
+          publish_dir: ./build
+          
+      - name: Deployment success
+        run: echo Latest build deployed successfully!
