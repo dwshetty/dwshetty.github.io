@@ -6,8 +6,8 @@ function About(): JSX.Element {
       <h1>TLDR;</h1>
       <blockquote cite="https://www.linkedin.com/in/dwitesh-shetty-66810b156/">
         <em>
-          Dwitesh Shetty presently possess 4 years of experience in debugging,
-          developing and maintaining modern web applications that are
+          Dwitesh Shetty presently possesses 4+ years of experience in
+          debugging, developing and maintaining modern web applications that are
           responsive, cross-browser compatible and platform independent. He is
           obsessed with implementing best practices pertaining to code quality.
           His professional expertise lies in Web Development using technologies
@@ -22,9 +22,9 @@ function About(): JSX.Element {
         <u>Career Statement</u>
       </h2>
       <p>
-        Dwitesh Shetty aspires to become an invaluable member of an organisation
-        in the form of a highly proficient full stack web developer empowered
-        with managerial capabilities.
+        He aspires to become an invaluable member of an organisation in the form
+        of a highly proficient full stack web developer empowered with
+        managerial capabilities.
         <br />
         He is passionate about web technologies (MERN stack), problem solving,
         networking and travelling.
