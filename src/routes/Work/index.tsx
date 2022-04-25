@@ -61,6 +61,13 @@ function DesignationDuration({
 function Work(): JSX.Element {
   const professionals: Professional[] = [
     {
+      clients: [{ name: "Skills Navigator", url: "#" }],
+      designations: ["Multiplatform FED ReactJS"],
+      durations: ["Dec '21 - Present"],
+      location: "Mumbai, Maharashtra, India",
+      name: "Accenture Solutions Private Limited"
+    },
+    {
       clients: [
         { name: "Mahindra & Mahindra", url: "https://www.mahindrasyouv.com/" },
         {
@@ -69,7 +76,7 @@ function Work(): JSX.Element {
         }
       ],
       designations: ["Software Professional"],
-      durations: ["Mar '20 - Present"],
+      durations: ["Mar '20 - Dec '21"],
       location: "Pune, Maharashtra, India",
       name: "Extentia Information Technology"
     },
