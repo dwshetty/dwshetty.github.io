@@ -61,7 +61,7 @@ function DesignationDuration({
 function Work(): JSX.Element {
   const professionals: Professional[] = [
     {
-      clients: [{ name: "Skills Navigator", url: "#" }],
+      clients: [{ name: "Accenture", url: "https://www.accenture.com/in-en" }],
       designations: ["Multiplatform FED ReactJS"],
       durations: ["Dec '21 - Present"],
       location: "Mumbai, Maharashtra, India",
