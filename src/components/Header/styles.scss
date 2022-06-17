@@ -44,61 +44,30 @@ header {
         width: 7px;
         border-radius: 50%;
         position: relative;
+        font-size: 1px;
+        $chakra-height: 0.5em;
 
         &::before,
         &::after,
         div {
           content: "";
           position: absolute;
-          top: 50%;
+          top: calc(50% - #{$chakra-height} / 2);
           left: 0;
           width: 100%;
-          height: 1px;
+          height: $chakra-height;
           background-color: blue;
         }
 
-        div:nth-child(1) {
-          transform: rotate(15deg);
-        }
-
-        div:nth-child(2) {
-          transform: rotate(30deg);
-        }
-
-        div:nth-child(3) {
-          transform: rotate(45deg);
-        }
-
-        div:nth-child(4) {
-          transform: rotate(60deg);
-        }
-
-        div:nth-child(5) {
-          transform: rotate(75deg);
-        }
-
-        div:nth-child(6) {
-          transform: rotate(105deg);
-        }
-
-        div:nth-child(7) {
-          transform: rotate(120deg);
-        }
-
-        div:nth-child(8) {
-          transform: rotate(135deg);
-        }
-
-        div:nth-child(9) {
-          transform: rotate(150deg);
-        }
-
-        div:nth-child(10) {
-          transform: rotate(165deg);
+        $chakraChildren: 4;
+        @for $i from 0 to $chakraChildren {
+          div {
+            @include chakraChild($i + 1);
+          }
         }
 
         &::after {
-          transform: rotate(90deg);
+          transform: rotate(150deg);
         }
       }
     }

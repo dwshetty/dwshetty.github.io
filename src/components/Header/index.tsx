@@ -32,12 +32,6 @@ function Header(): JSX.Element {
             <div />
             <div />
             <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
-            <div />
           </div>
         </div>
         <div className="third" />
