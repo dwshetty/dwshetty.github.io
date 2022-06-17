@@ -25,22 +25,6 @@ function Home(): JSX.Element {
         <i className="fas fa-smile-beam fa-lg" />
       </h1>
       <br />
-      {/* <h3>
-        <div>By profession, he is a&nbsp;</div>
-        <div className={styles.webDeveloperWrapper}>
-          <div className={styles.webDeveloper}>
-            Web Developer&nbsp;
-            <i className="fas fa-laptop-code" />
-          </div>
-          <div className={styles.webDeveloperOverlay}>
-            <span className={styles.cursor}>|</span>
-            <span className={styles.overlay}>
-              <span>Web Developer&nbsp;</span>
-              <i className="fas fa-laptop-code" />
-            </span>
-          </div>
-        </div>
-      </h3> */}
       <h2>
         <div>By profession, he is a&nbsp;</div>
         <div className={styles.webDeveloperWrapper}>
@@ -71,7 +55,7 @@ function Home(): JSX.Element {
             &nbsp; constitute his main students.
           </li>
           <li>
-            His primary skill is teaching his student the art of developing its
+            His primary skill is teaching each student the art of developing its
             own web so that it may build itself a home.
           </li>
           <li>

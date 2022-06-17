@@ -33,3 +33,9 @@
     }
   }
 }
+
+@mixin chakraChild($n) {
+  &:nth-child(#{$n}) {
+    transform: rotate(30deg * $n);
+  }
+}
