@@ -14,14 +14,14 @@ const Meta = ({
 }: IMeta): JSX.Element => {
   const title =
     pageTitle ||
-    (suffixTitle
-      ? `${process.env.REACT_APP_WEBSITE_TITLE} | ${suffixTitle}`
-      : "");
+    `${process.env.REACT_APP_WEBSITE_TITLE}${
+      suffixTitle ? ` | ${suffixTitle}` : ""
+    }`;
   const description =
     pageDescription ||
-    (suffixDescription
-      ? `${process.env.REACT_APP_WEBSITE_DESCRIPTION} | ${suffixDescription}`
-      : "");
+    `${process.env.REACT_APP_WEBSITE_DESCRIPTION}${
+      suffixDescription ? ` | ${suffixDescription}` : ""
+    }`;
   const canonicalUrl = process.env.PUBLIC_URL;
 
   return (
