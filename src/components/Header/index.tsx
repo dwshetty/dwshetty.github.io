@@ -36,10 +36,10 @@ function Header(): JSX.Element {
         </div>
         <div className="third" />
       </div>
-      <div className="menu" role="menubar" tabIndex={0}>
+      <div className="menu" role="button" tabIndex={0}>
         <div className="wrapper">
-          <span>Menu</span>
-          <span />
+          <span id="menu">Menu</span>
+          <span role="button" aria-labelledby="menu" />
         </div>
         <Suspense fallback={<></>}>
           <HoverMenu />
