@@ -8,13 +8,18 @@ function NoMatch(): JSX.Element {
   return (
     <>
       <Meta
-        pageTitle="Page Not Found"
-        pageDescription="Page not found. You have hit a dead end while browsing for Dwitesh Shetty"
+        pageTitle="404 | Page Not Found"
+        pageDescription="Page not found. You seem to have hit a dead end while browsing for Dwitesh Shetty"
       />
-      <h2 className={styles.h2}>Page not found</h2>
-      <h3 className={styles.h3}>
-        No match for <code>{location.pathname}</code>
-      </h3>
+      <div className={styles.noMatch}>
+        <h2 className={styles.h2}>Page not found</h2>
+        <br />
+        <h4 className={styles.h4}>
+          Unfortunately, there is no match for <code>{location.pathname}</code>{" "}
+          atm.
+        </h4>
+        <span>Please try another url</span>
+      </div>
     </>
   );
 }
