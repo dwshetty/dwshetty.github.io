@@ -51,7 +51,9 @@
         opacity: 1;
         color: white;
         background-color: white;
-        animation: toggle 5s linear 4s infinite normal;
+        // animation: toggle 5s linear 4s infinite normal;
+        animation: toggle 5s linear 1s infinite normal;
+        left: 100%;
 
         .cursor {
           position: relative;
@@ -70,24 +72,29 @@
   }
 
   .pointsWrapper {
-    ul {
-      li {
-        transform: translateX(200%);
-        animation: slide-from-right 2s linear 1s 1 forwards;
-      }
+    // ul {
+    //   li {
+    //     transform: translateX(200%);
+    //     animation: slide-from-right 2s linear 1s 1 forwards;
+    //   }
 
-      li:first-child {
-        animation-delay: 0s;
-      }
+    //   li:first-child {
+    //     animation-delay: 0s;
+    //   }
 
-      li:last-child {
-        animation-delay: 2s;
-      }
-    }
+    //   li:last-child {
+    //     animation-delay: 2s;
+    //   }
+    // }
 
     blockquote {
-      color: gold;
-      text-shadow: 1px 1px 2px #000;
+      color: #000;
+      text-shadow: 1px 1px 2px gold;
+
+      i {
+        color: gold;
+        text-shadow: 1px 1px 2px #000;
+      }
     }
   }
 
@@ -145,12 +152,12 @@
   10%,
   90%,
   100% {
-    left: 0;
+    left: 100%;
   }
 
   33%,
   67% {
-    left: 100%;
+    left: 0%;
   }
 }
 
@@ -160,11 +167,11 @@
   }
 }
 
-@keyframes slide-from-right {
-  to {
-    transform: translateX(0%);
-  }
-}
+// @keyframes slide-from-right {
+//   to {
+//     transform: translateX(0%);
+//   }
+// }
 
 @keyframes glowing {
   from {
