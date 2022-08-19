@@ -1,5 +1,7 @@
 @import "../../components/mixins.module.scss";
 
+$animationDelay: 1s;
+
 .text-align-center {
   text-align: center;
 }
@@ -52,7 +54,7 @@
         color: white;
         background-color: white;
         // animation: toggle 5s linear 4s infinite normal;
-        animation: toggle 5s linear 1s infinite normal;
+        animation: toggle 5s linear $animationDelay infinite normal;
         left: 100%;
 
         .cursor {
@@ -111,7 +113,7 @@
       padding-top: 1rem;
 
       i {
-        animation-delay: 4s;
+        animation-delay: $animationDelay;
         animation-direction: normal;
         animation-duration: 4s;
         animation-iteration-count: infinite;
@@ -143,7 +145,7 @@
   .leisure {
     @extend .text-align-center;
     color: purple;
-    animation: glowing 1s ease-in-out 4s infinite alternate;
+    animation: glowing 1s ease-in-out $animationDelay infinite alternate;
   }
 }
 
