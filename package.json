@@ -43,7 +43,8 @@
     "lint": "tsc --noEmit && eslint --ext js,jsx,ts,tsx src --fix",
     "clean:gh-cache": "rm -rf node_modules/.cache/gh-pages",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master-build -d build"
+    "deploy": "gh-pages -b master-build -d build",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -80,6 +81,15 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.2.3",
     "prettier": "^2.3.2",
+    "react-snap": "^1.23.0",
     "serve": "^12.0.0"
+  },
+  "reactSnap": {
+    "include": [
+      "/",
+      "/about",
+      "/work",
+      "/contact"
+    ]
   }
 }

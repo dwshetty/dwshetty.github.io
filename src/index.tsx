@@ -1,16 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { StrictMode } from "react";
+import { hydrate, render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 // import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
+const AppRoot = () => (
+  <StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </StrictMode>
 );
+const rootElement = document.getElementById("root");
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+if (rootElement!.hasChildNodes()) {
+  hydrate(<AppRoot />, rootElement);
+} else {
+  render(<AppRoot />, rootElement);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
