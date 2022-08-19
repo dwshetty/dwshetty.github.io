@@ -8,7 +8,7 @@
     "Contact.css": "https://dwshetty.github.io/static/css/Contact.ef089a06.chunk.css",
     "Contact.js": "https://dwshetty.github.io/static/js/Contact.9423201e.chunk.js",
     "Contact.js.map": "https://dwshetty.github.io/static/js/Contact.9423201e.chunk.js.map",
-    "Home.css": "https://dwshetty.github.io/static/css/Home.9c85f462.chunk.css",
+    "Home.css": "https://dwshetty.github.io/static/css/Home.903b7eae.chunk.css",
     "Home.js": "https://dwshetty.github.io/static/js/Home.661f1219.chunk.js",
     "Home.js.map": "https://dwshetty.github.io/static/js/Home.661f1219.chunk.js.map",
     "HoverMenu.css": "https://dwshetty.github.io/static/css/HoverMenu.6166e7e8.chunk.css",
@@ -27,8 +27,8 @@
     "main.css": "https://dwshetty.github.io/static/css/main.8a43e67e.chunk.css",
     "main.js": "https://dwshetty.github.io/static/js/main.1f24c772.chunk.js",
     "main.js.map": "https://dwshetty.github.io/static/js/main.1f24c772.chunk.js.map",
-    "runtime-main.js": "https://dwshetty.github.io/static/js/runtime-main.78801da5.js",
-    "runtime-main.js.map": "https://dwshetty.github.io/static/js/runtime-main.78801da5.js.map",
+    "runtime-main.js": "https://dwshetty.github.io/static/js/runtime-main.3db8c191.js",
+    "runtime-main.js.map": "https://dwshetty.github.io/static/js/runtime-main.3db8c191.js.map",
     "static/js/11.fd11ce56.chunk.js": "https://dwshetty.github.io/static/js/11.fd11ce56.chunk.js",
     "static/js/11.fd11ce56.chunk.js.map": "https://dwshetty.github.io/static/js/11.fd11ce56.chunk.js.map",
     "index.html": "https://dwshetty.github.io/index.html",
@@ -37,7 +37,7 @@
     "service-worker.js.map": "https://dwshetty.github.io/service-worker.js.map",
     "static/css/About.be509da5.chunk.css.map": "https://dwshetty.github.io/static/css/About.be509da5.chunk.css.map",
     "static/css/Contact.ef089a06.chunk.css.map": "https://dwshetty.github.io/static/css/Contact.ef089a06.chunk.css.map",
-    "static/css/Home.9c85f462.chunk.css.map": "https://dwshetty.github.io/static/css/Home.9c85f462.chunk.css.map",
+    "static/css/Home.903b7eae.chunk.css.map": "https://dwshetty.github.io/static/css/Home.903b7eae.chunk.css.map",
     "static/css/HoverMenu.6166e7e8.chunk.css.map": "https://dwshetty.github.io/static/css/HoverMenu.6166e7e8.chunk.css.map",
     "static/css/NoMatch.fe1a9058.chunk.css.map": "https://dwshetty.github.io/static/css/NoMatch.fe1a9058.chunk.css.map",
     "static/css/Work.fd09243d.chunk.css.map": "https://dwshetty.github.io/static/css/Work.fd09243d.chunk.css.map",
@@ -45,7 +45,7 @@
     "static/js/11.fd11ce56.chunk.js.LICENSE.txt": "https://dwshetty.github.io/static/js/11.fd11ce56.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.78801da5.js",
+    "static/js/runtime-main.3db8c191.js",
     "static/js/11.fd11ce56.chunk.js",
     "static/css/main.8a43e67e.chunk.css",
     "static/js/main.1f24c772.chunk.js"
