@@ -22,7 +22,7 @@ const Meta = ({
     `${process.env.REACT_APP_WEBSITE_DESCRIPTION}${
       suffixDescription ? ` | ${suffixDescription}` : ""
     }`;
-  const canonicalUrl = process.env.PUBLIC_URL;
+  const canonicalUrl = window.location.origin;
 
   return (
     <Helmet>
