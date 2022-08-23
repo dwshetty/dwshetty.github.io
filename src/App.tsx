@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import Main from "modules/Main";
 import Routes from "modules/Routes";
@@ -12,14 +12,14 @@ const ScrollToTop = lazy(
 
 function App(): JSX.Element {
   return (
-    <Router>
+    <BrowserRouter>
       <Suspense fallback={<></>}>
         <ScrollToTop />
       </Suspense>
       <Main>
         <Routes />
       </Main>
-    </Router>
+    </BrowserRouter>
   );
 }
 

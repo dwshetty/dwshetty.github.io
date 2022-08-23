@@ -6,17 +6,26 @@ function Menu(): JSX.Element {
   return (
     <ul className={styles.navLinks} role="menubar" aria-orientation="vertical">
       <li role="menuitem">
-        <NavLink to="/about" exact activeClassName={styles.selected}>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? styles.selected : "")}
+        >
           About
         </NavLink>
       </li>
       <li role="menuitem">
-        <NavLink to="/work" exact activeClassName={styles.selected}>
+        <NavLink
+          to="/work"
+          className={({ isActive }) => (isActive ? styles.selected : "")}
+        >
           Work
         </NavLink>
       </li>
       <li role="menuitem">
-        <NavLink to="/contact" exact activeClassName={styles.selected}>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? styles.selected : "")}
+        >
           Contact
         </NavLink>
       </li>

@@ -1,11 +1,11 @@
-import { PropsWithChildren, ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
 import Header from "components/Header";
 import Footer from "components/Footer";
 
 import "./styles.scss";
 
-function Main({ children }: PropsWithChildren<ReactNode>): JSX.Element {
+function Main({ children }: PropsWithChildren<unknown>): JSX.Element {
   return (
     <>
       <Header />

@@ -20,7 +20,7 @@ function Header(): JSX.Element {
   return (
     <header>
       <nav>
-        <NavLink to="/" exact>
+        <NavLink to="/">
           <code>dwshetty</code>
         </NavLink>
       </nav>
@@ -46,7 +46,7 @@ function Header(): JSX.Element {
         </Suspense>
       </div>
       <div className="sidenav">
-        <button type="button" onClick={toggleSideNav}>
+        <button type="button" aria-label="open sidenav" onClick={toggleSideNav}>
           &#9776;
         </button>
         <Suspense fallback={<></>}>

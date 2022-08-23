@@ -1,5 +1,5 @@
 import { StrictMode } from "react";
-import { hydrate, render } from "react-dom";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
@@ -12,10 +12,13 @@ const AppRoot = () => (
 );
 const rootElement = document.getElementById("root");
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(rootElement!);
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 if (rootElement!.hasChildNodes()) {
-  hydrate(<AppRoot />, rootElement);
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  hydrateRoot(rootElement!, <AppRoot />);
 } else {
-  render(<AppRoot />, rootElement);
+  root.render(<AppRoot />);
 }
 
 // If you want your app to work offline and load faster, you can change

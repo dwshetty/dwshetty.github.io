@@ -13,28 +13,40 @@ function SideNavMenu({
     <div className={`sidenav__menu ${showSidenav ? "show" : ""}`}>
       <ul className="navlinks">
         <li>
-          <NavLink to="/" exact activeClassName="selected">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "selected" : "")}
+          >
             <button type="button" onClick={toggleSideNav}>
               Home
             </button>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" exact activeClassName="selected">
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "selected" : "")}
+          >
             <button type="button" onClick={toggleSideNav}>
               About
             </button>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/work" exact activeClassName="selected">
+          <NavLink
+            to="/work"
+            className={({ isActive }) => (isActive ? "selected" : "")}
+          >
             <button type="button" onClick={toggleSideNav}>
               Work
             </button>
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" exact activeClassName="selected">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "selected" : "")}
+          >
             <button type="button" onClick={toggleSideNav}>
               Contact
             </button>
