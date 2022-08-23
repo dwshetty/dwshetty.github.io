@@ -11,6 +11,7 @@ const ScrollToTop = lazy(
 );
 
 function App(): JSX.Element {
+  // eslint-disable-next-line no-console
   console.log("REACT_APP_HOST_ENDPOINT", process.env.REACT_APP_HOST_ENDPOINT);
   return (
     <BrowserRouter>
