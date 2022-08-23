@@ -11,6 +11,8 @@ const ScrollToTop = lazy(
 );
 
 function App(): JSX.Element {
+  // eslint-disable-next-line no-console
+  console.log("REACT_APP_HOST_URL", process.env.REACT_APP_HOST_URL);
   return (
     <BrowserRouter>
       <Suspense fallback={<></>}>
