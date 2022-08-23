@@ -38,7 +38,7 @@ jobs:
         run: |
           yarn run build
           echo Build created successfully!
-        environment: github-pages
+        env: github-pages
         # env:
         #   REACT_APP_HOST_ENDPOINT: ${{ secrets.REACT_APP_HOST_ENDPOINT }}
 
