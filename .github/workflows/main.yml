@@ -35,13 +35,13 @@ jobs:
           echo Dependencies installed successfully!
 
       - name: Create new build
-        run: |
-          yarn run build
-          echo Build created successfully!
         env:
           REACT_APP_HOST_URL: ${{ secrets.REACT_APP_HOST_URL }}
           REACT_APP_WEBSITE_TITLE: ${{ secrets.REACT_APP_WEBSITE_TITLE }}
-          REACT_APP_WEBSITE_DESCRIPTION: ${{secrets.REACT_APP_WEBSITE_DESCRIPTION}}
+          REACT_APP_WEBSITE_DESCRIPTION: ${{ secrets.REACT_APP_WEBSITE_DESCRIPTION }}
+        run: |
+          yarn run build
+          echo Build created successfully!
 
       - name: Deploy latest build
         uses: peaceiris/actions-gh-pages@v3
