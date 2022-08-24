@@ -30,20 +30,20 @@ function Home(): JSX.Element {
         </h1>
         <br />
         <h2>
-          <div>By profession, he is a&nbsp;</div>
-          <div className={styles.webDeveloperWrapper}>
-            <div className={styles.webDeveloper}>
+          <span>By profession, he is a&nbsp;</span>
+          <span className={styles.webDeveloperWrapper}>
+            <span className={styles.webDeveloper}>
               Web Developer&nbsp;
               <i className="fas fa-laptop-code" />
-            </div>
-            <div className={styles.webDeveloperOverlay}>
+            </span>
+            <span className={styles.webDeveloperOverlay}>
               <span className={styles.cursor}>|</span>
               <span className={styles.overlay}>
                 <span>Web Developer&nbsp;</span>
                 <i className="fas fa-laptop-code" />
               </span>
-            </div>
-          </div>
+            </span>
+          </span>
         </h2>
         <br />
         <p>
@@ -51,7 +51,7 @@ function Home(): JSX.Element {
           it means:
         </p>
         <br />
-        <section className={styles.pointsWrapper}>
+        <div className={styles.pointsWrapper}>
           <ul>
             <li>
               Arachnids such as &nbsp;
@@ -76,7 +76,7 @@ function Home(): JSX.Element {
               <i className="fas fa-grin-tongue-wink fa-lg" />
             </em>
           </blockquote>
-        </section>
+        </div>
         <br />
         <hr />
         <br />
@@ -100,18 +100,17 @@ function Home(): JSX.Element {
         <br />
         <hr />
         <br />
-        <article>
+        <div>
           Being a tech savvy, he regularly goes on the hunt for technical blogs
           and hopes to contribute towards the same so as to enable fellow
           techies polish their own knowledge of web development.
-        </article>
+        </div>
         <br />
         <br />
         <h3 className={styles.leisure}>
-          <div>
-            In his leisure time, you will find him either cracking open a cold
-            one with the boys or surfing social media for memes
-          </div>
+          In his leisure time, you will find him either cracking open a cold one
+          with the boys or surfing social media for memes
+          <br />
           <i className="far fa-grin-stars fa-lg" />
         </h3>
       </section>

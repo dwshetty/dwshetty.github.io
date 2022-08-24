@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { lazy, Suspense, useState, useCallback } from "react";
 
 import "./styles.scss";
@@ -20,9 +20,9 @@ function Header(): JSX.Element {
   return (
     <header>
       <nav>
-        <NavLink to="/">
+        <Link to="/">
           <code>dwshetty</code>
-        </NavLink>
+        </Link>
       </nav>
       <div className="flag">
         <div className="first" />
@@ -36,17 +36,19 @@ function Header(): JSX.Element {
         </div>
         <div className="third" />
       </div>
-      <div className="menu" role="button" tabIndex={0}>
-        <div className="wrapper">
-          <span id="menu">Menu</span>
-          <span role="button" aria-labelledby="menu" />
+      <div className="menu" role="menu" tabIndex={0}>
+        <div aria-controls="menu" className="wrapper" role="group">
+          <span aria-label="Menu" id="menu">
+            Menu
+          </span>
+          <span aria-describedby="menu" />
         </div>
         <Suspense fallback={<></>}>
           <HoverMenu />
         </Suspense>
       </div>
       <div className="sidenav">
-        <button type="button" aria-label="open sidenav" onClick={toggleSideNav}>
+        <button aria-label="open sidenav" onClick={toggleSideNav} type="button">
           &#9776;
         </button>
         <Suspense fallback={<></>}>

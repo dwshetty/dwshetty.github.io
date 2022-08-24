@@ -11,51 +11,43 @@ function SideNavMenu({
 }: ISideNavMenu): JSX.Element {
   return (
     <div className={`sidenav__menu ${showSidenav ? "show" : ""}`}>
-      <ul className="navlinks">
-        <li>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "selected" : "")}
-          >
-            <button type="button" onClick={toggleSideNav}>
-              Home
-            </button>
+      <ul className="navlinks" role="menu">
+        <li role="menuitem">
+          <NavLink activeClassName="selected" onClick={toggleSideNav} to="/">
+            Home
           </NavLink>
         </li>
-        <li>
+        <li role="menuitem">
           <NavLink
+            activeClassName="selected"
+            onClick={toggleSideNav}
             to="/about"
-            className={({ isActive }) => (isActive ? "selected" : "")}
           >
-            <button type="button" onClick={toggleSideNav}>
-              About
-            </button>
+            About
           </NavLink>
         </li>
-        <li>
+        <li role="menuitem">
           <NavLink
+            activeClassName="selected"
+            onClick={toggleSideNav}
             to="/work"
-            className={({ isActive }) => (isActive ? "selected" : "")}
           >
-            <button type="button" onClick={toggleSideNav}>
-              Work
-            </button>
+            Work
           </NavLink>
         </li>
-        <li>
+        <li role="menuitem">
           <NavLink
+            activeClassName="selected"
+            onClick={toggleSideNav}
             to="/contact"
-            className={({ isActive }) => (isActive ? "selected" : "")}
           >
-            <button type="button" onClick={toggleSideNav}>
-              Contact
-            </button>
+            Contact
           </NavLink>
         </li>
       </ul>
       <i
-        className="overlay"
         aria-label="close sidenav"
+        className="overlay"
         onClick={toggleSideNav}
         onKeyPress={toggleSideNav}
         role="button"

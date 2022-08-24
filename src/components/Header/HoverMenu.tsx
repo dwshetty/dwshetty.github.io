@@ -4,28 +4,19 @@ import styles from "./HoverMenu.module.scss";
 
 function Menu(): JSX.Element {
   return (
-    <ul className={styles.navLinks} role="menubar" aria-orientation="vertical">
+    <ul className={styles.navLinks} role="group">
       <li role="menuitem">
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? styles.selected : "")}
-        >
+        <NavLink to="/about" activeClassName={styles.selected}>
           About
         </NavLink>
       </li>
       <li role="menuitem">
-        <NavLink
-          to="/work"
-          className={({ isActive }) => (isActive ? styles.selected : "")}
-        >
+        <NavLink to="/work" activeClassName={styles.selected}>
           Work
         </NavLink>
       </li>
       <li role="menuitem">
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => (isActive ? styles.selected : "")}
-        >
+        <NavLink to="/contact" activeClassName={styles.selected}>
           Contact
         </NavLink>
       </li>
