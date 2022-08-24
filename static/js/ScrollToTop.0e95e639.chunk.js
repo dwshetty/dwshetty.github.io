@@ -1,0 +1,2 @@
+(this.webpackJsonpdwshetty=this.webpackJsonpdwshetty||[]).push([[6],{46:function(t,e,n){"use strict";n.r(e);var s=n(1),c=n(2);e.default=function(){var t=Object(c.f)().pathname;return Object(s.useEffect)((function(){window.scrollTo(0,0)}),[t]),null}}}]);
+//# sourceMappingURL=ScrollToTop.0e95e639.chunk.js.map
