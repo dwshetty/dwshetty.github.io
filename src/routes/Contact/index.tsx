@@ -15,16 +15,16 @@ function Contact(): JSX.Element {
         <h1>
           <u>Get in touch</u>
         </h1>
-        <section>
+        <div>
           <GetInTouchCards />
-        </section>
+        </div>
         <br />
         <hr />
         <br />
         <h2>You can also find me on any of the following spaces:</h2>
-        <section>
+        <div>
           <MediumCards />
-        </section>
+        </div>
       </section>
     </>
   );

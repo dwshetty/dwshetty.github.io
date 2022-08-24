@@ -16,7 +16,7 @@ function GetInTouchCards(): JSX.Element {
       style: {
         color: "#495057"
       },
-      href: "mailto:dwitesh21_syningo@yahoo.co.in?subject=Get in touch",
+      href: "mailto:dwitesh21_syningo@yahoo.co.in?subject=Get%20in%20touch",
       iconClassName: "envelope",
       name: "Email",
       secondaryIconClassName: "envelope"

@@ -1,15 +1,10 @@
-type Css = {
-  color: string;
-  background?: string;
-  WebkitBackgroundClip?: string;
-  WebkitTextFillColor?: string;
-};
+import { CSSProperties } from "react";
 
 export interface IRevealingCard {
   name: string;
   href: string;
   disabled?: boolean;
-  style: Css;
+  style: CSSProperties;
   secondaryIconClassName: string;
   iconClassName: string;
   iconType?: string;

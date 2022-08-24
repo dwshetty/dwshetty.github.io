@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import RevealingCards from "components/RevealingCards";
+import { IRevealingCard } from "components/RevealingCard/types";
 
 function MediumCards(): JSX.Element {
-  const mediumsRef = useRef([
+  const mediumsRef = useRef<Array<IRevealingCard>>([
     {
       style: {
         color: "#007bb5"
@@ -46,11 +47,12 @@ function MediumCards(): JSX.Element {
     },
     {
       style: {
-        background:
+        backgroundImage:
           "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
-        color: "transparent"
+        color:
+          "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"
       },
       href: "https://www.instagram.com/dwitesh_shetty/",
       iconClassName: "instagram",

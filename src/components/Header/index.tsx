@@ -38,9 +38,7 @@ function Header(): JSX.Element {
       </div>
       <div className="menu" role="menu" tabIndex={0}>
         <div aria-controls="menu" className="wrapper" role="group">
-          <span aria-label="Menu" id="menu">
-            Menu
-          </span>
+          <span id="menu">Menu</span>
           <span aria-describedby="menu" />
         </div>
         <Suspense fallback={<></>}>

@@ -8,7 +8,7 @@ function About(): JSX.Element {
         suffixTitle="About"
         pageDescription="This page furnishes details about Dwitesh Shetty"
       />
-      <section className={styles.wrapper}>
+      <article className={styles.wrapper}>
         <h1>TLDR;</h1>
         <blockquote cite="https://www.linkedin.com/in/dwitesh-shetty-66810b156/">
           <em>
@@ -24,29 +24,31 @@ function About(): JSX.Element {
         <br />
         <hr />
         <br />
-        <h2>
-          <u>Career Statement</u>
-        </h2>
-        <p>
-          He aspires to become an invaluable member of an organisation in the
-          form of a highly proficient full stack web developer empowered with
-          managerial capabilities.
-          <br />
-          He is passionate about web technologies (MERN stack), problem solving,
-          networking and travelling.
-          <br />
-          He is skilled in basic fire safety, communication, collaboration,
-          multitasking, performance motivation, strategic thinking, systematic
-          approach and time management.
-        </p>
+        <section>
+          <h2>
+            <u>Career Statement</u>
+          </h2>
+          <p>
+            He aspires to become an invaluable member of an organisation in the
+            form of a highly proficient full stack web developer empowered with
+            managerial capabilities.
+            <br />
+            He is passionate about web technologies (MERN stack), problem
+            solving, networking and travelling.
+            <br />
+            He is skilled in basic fire safety, communication, collaboration,
+            multitasking, performance motivation, strategic thinking, systematic
+            approach and time management.
+          </p>
+        </section>
         <br />
         <hr />
         <br />
-        <h2>
-          <u>Professional skills</u>
-        </h2>
-        <article className={styles.professionalSkills}>
-          <ul>
+        <section>
+          <h2>
+            <u>Professional skills</u>
+          </h2>
+          <ul className={styles.professionalSkills}>
             <li>
               <strong>Web Development:</strong> CSS, ESLint, ExpressJS, Enzyme,
               Firebase, HTML, Java, Javascript, Jest, jQuery, JSP, MongoDB,
@@ -60,15 +62,15 @@ function About(): JSX.Element {
               Windows, Wordpress
             </li>
           </ul>
-        </article>
+        </section>
         <br />
         <hr />
         <br />
-        <h2>
-          <u>Personal skills</u>
-        </h2>
-        <article className={styles.personalSkills}>
-          <ul>
+        <section>
+          <h2>
+            <u>Personal skills</u>
+          </h2>
+          <ul className={styles.personalSkills}>
             <li>
               Proficient in formal communication with clients, colleagues and
               senior management when gathering requirements, scrutinizing
@@ -97,8 +99,8 @@ function About(): JSX.Element {
               smartly, with no compromise on final product quality.
             </li>
           </ul>
-        </article>
-      </section>
+        </section>
+      </article>
     </>
   );
 }
