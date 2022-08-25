@@ -20,7 +20,7 @@ function Home(): JSX.Element {
       <Meta />
       <section className={styles.wrapper}>
         <h1>
-          <span>Good {greeting}!</span>
+          <span>Good {greeting}! </span>
           <br />
           <span>
             Dwitesh Shetty is glad to see you on his portfolio website

@@ -2,6 +2,15 @@ import Meta from "components/Meta";
 import styles from "./styles.module.scss";
 
 function About(): JSX.Element {
+  const getYearsOfExperience = () => {
+    const startDate = new Date("2017, 08, 23");
+    const currentDate = new Date();
+    const yearsOfExperience =
+      (currentDate.getTime() - startDate.getTime()) /
+      (1000 * 60 * 60 * 24 * 365);
+    return Math.trunc(yearsOfExperience);
+  };
+
   return (
     <>
       <Meta
@@ -12,13 +21,14 @@ function About(): JSX.Element {
         <h1>TLDR;</h1>
         <blockquote cite="https://www.linkedin.com/in/dwitesh-shetty-66810b156/">
           <em>
-            Dwitesh Shetty presently possesses 4+ years of experience in
-            debugging, developing and maintaining modern web applications that
-            are responsive, cross-browser compatible and platform independent.
-            He is obsessed with implementing best practices pertaining to code
-            quality. His professional expertise lies in Web Development using
-            technologies including but not limited to HTML5, CSS3, JavaScript,
-            Typescript, ReactJS, NextJS at par with latest standards.
+            Dwitesh Shetty presently possesses {getYearsOfExperience()}+ years
+            of experience in debugging, developing and maintaining modern web
+            applications that are responsive, cross-browser compatible and
+            platform independent. He is obsessed with implementing best
+            practices pertaining to code quality. His professional expertise
+            lies in Web Development using technologies including but not limited
+            to HTML5, CSS3, JavaScript, Typescript, ReactJS, NextJS at par with
+            latest standards.
           </em>
         </blockquote>
         <br />
@@ -50,10 +60,10 @@ function About(): JSX.Element {
           </h2>
           <ul className={styles.professionalSkills}>
             <li>
-              <strong>Web Development:</strong> CSS, ESLint, ExpressJS, Enzyme,
-              Firebase, HTML, Java, Javascript, Jest, jQuery, JSP, MongoDB,
-              NextJS, NodeJS, Prettier, ReactJS, Redux, Servlet, SonarLint, SQL,
-              Typescript, Webpack
+              <strong>Web Development:</strong> CSS, Cypress, ESLint, ExpressJS,
+              Enzyme, Firebase, HTML, Java, Javascript, Jest, jQuery, JSP, MobX,
+              MongoDB, NextJS, NodeJS, Prettier, ReactJS, Redux, Servlet,
+              SonarLint, SQL, Typescript, Webpack
             </li>
             <li>
               <strong>Others:</strong> Adobe Experience Manager, Azure DevOps,
