@@ -13,13 +13,17 @@ function SideNavMenu({
     <div className={`sidenav__menu ${showSidenav ? "show" : ""}`}>
       <ul className="navlinks" role="menu">
         <li role="menuitem">
-          <NavLink activeClassName="selected" onClick={toggleSideNav} to="/">
+          <NavLink
+            className={({ isActive }) => (isActive ? "selected" : "")}
+            onClick={toggleSideNav}
+            to="/"
+          >
             Home
           </NavLink>
         </li>
         <li role="menuitem">
           <NavLink
-            activeClassName="selected"
+            className={({ isActive }) => (isActive ? "selected" : "")}
             onClick={toggleSideNav}
             to="/about"
           >
@@ -28,7 +32,7 @@ function SideNavMenu({
         </li>
         <li role="menuitem">
           <NavLink
-            activeClassName="selected"
+            className={({ isActive }) => (isActive ? "selected" : "")}
             onClick={toggleSideNav}
             to="/work"
           >
@@ -37,7 +41,7 @@ function SideNavMenu({
         </li>
         <li role="menuitem">
           <NavLink
-            activeClassName="selected"
+            className={({ isActive }) => (isActive ? "selected" : "")}
             onClick={toggleSideNav}
             to="/contact"
           >

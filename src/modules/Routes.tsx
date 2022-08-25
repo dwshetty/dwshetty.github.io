@@ -1,5 +1,5 @@
 import { lazy, ReactElement, Suspense } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Loading from "components/Loading";
 
 const Home = lazy(() => import(/* webpackChunkName: "Home" */ "routes/Home"));
@@ -17,13 +17,13 @@ const NoMatch = lazy(
 function AppRoutes(): ReactElement {
   return (
     <Suspense fallback={<Loading />}>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/work" component={Work} />
-        <Route path="/contact" component={Contact} />
-        <Route component={NoMatch} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="work" element={<Work />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
     </Suspense>
   );
 }

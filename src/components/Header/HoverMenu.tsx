@@ -6,17 +6,26 @@ function Menu(): JSX.Element {
   return (
     <ul className={styles.navLinks} role="group">
       <li role="menuitem">
-        <NavLink to="/about" activeClassName={styles.selected}>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? styles.selected : "")}
+        >
           About
         </NavLink>
       </li>
       <li role="menuitem">
-        <NavLink to="/work" activeClassName={styles.selected}>
+        <NavLink
+          to="/work"
+          className={({ isActive }) => (isActive ? styles.selected : "")}
+        >
           Work
         </NavLink>
       </li>
       <li role="menuitem">
-        <NavLink to="/contact" activeClassName={styles.selected}>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? styles.selected : "")}
+        >
           Contact
         </NavLink>
       </li>
