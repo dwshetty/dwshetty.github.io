@@ -8,7 +8,7 @@ function NoMatch(): JSX.Element {
   return (
     <>
       <Meta
-        pageTitle="404 | Page Not Found"
+        prefixTitle="404 - Page Not Found"
         pageDescription="Page not found. You seem to have hit a dead end while browsing for Dwitesh Shetty"
       />
       <div className={styles.noMatch}>

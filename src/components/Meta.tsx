@@ -3,20 +3,23 @@ import { Helmet } from "react-helmet";
 interface IMeta {
   pageDescription?: string;
   pageTitle?: string;
+  prefixTitle?: string;
   suffixDescription?: string;
   suffixTitle?: string;
 }
 const Meta = ({
   pageTitle,
   pageDescription,
+  prefixTitle,
   suffixTitle,
   suffixDescription
 }: IMeta): JSX.Element => {
-  const title =
+  const title = `${prefixTitle ? `${prefixTitle} | ` : ""}${
     pageTitle ||
     `${process.env.REACT_APP_WEBSITE_TITLE}${
       suffixTitle ? ` | ${suffixTitle}` : ""
-    }`;
+    }`
+  }`;
   const description =
     pageDescription ||
     `${process.env.REACT_APP_WEBSITE_DESCRIPTION}${
@@ -42,6 +45,7 @@ const Meta = ({
 Meta.defaultProps = {
   pageTitle: "",
   pageDescription: "",
+  prefixTitle: "",
   suffixTitle: "",
   suffixDescription: ""
 };
