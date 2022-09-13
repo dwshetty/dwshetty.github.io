@@ -1,8 +1,9 @@
 import RevealingCards from "components/RevealingCards";
+import { IRevealingCard } from "components/RevealingCard/types";
 import { useRef } from "react";
 
 function GetInTouchCards(): JSX.Element {
-  const getInTouchRef = useRef([
+  const getInTouchRef = useRef<IRevealingCard[]>([
     {
       style: {
         color: "#DD4B3E"

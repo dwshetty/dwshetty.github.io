@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "rvest.vs-code-prettier-eslint",
+    "eamodio.gitlens",
+    "DotJoshJohnson.xml"
+  ]
+}

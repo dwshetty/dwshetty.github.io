@@ -35,8 +35,7 @@
     "start:https": "HTTPS=true npm run start",
     "serve": "serve -s build",
     "serve:run": "npm run build && npm run serve",
-    "format": "prettier --write src/*",
-    "lint": "tsc --noEmit && eslint --ext js,jsx,ts,tsx src --fix",
+    "lint": "tsc --noEmit && eslint --fix",
     "clean:gh-cache": "rm -rf node_modules/.cache/gh-pages",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master-build -d build",
@@ -60,7 +59,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://dwshetty.github.io/",
+  "homepage": "https://dwshetty.github.io",
   "devDependencies": {
     "@types/jest": "^28.1.7",
     "@types/node": "^18.7.11",
