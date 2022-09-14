@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { sideNavMenuLinks } from "./constants";
 
 interface ISideNavMenu {
   showSidenav: boolean;
@@ -12,42 +13,17 @@ function SideNavMenu({
   return (
     <div className={`sidenav__menu ${showSidenav ? "show" : ""}`}>
       <ul className="navlinks" role="menu">
-        <li role="menuitem">
-          <NavLink
-            className={({ isActive }) => (isActive ? "selected" : "")}
-            onClick={toggleSideNav}
-            to="/"
-          >
-            Home
-          </NavLink>
-        </li>
-        <li role="menuitem">
-          <NavLink
-            className={({ isActive }) => (isActive ? "selected" : "")}
-            onClick={toggleSideNav}
-            to="/about"
-          >
-            About
-          </NavLink>
-        </li>
-        <li role="menuitem">
-          <NavLink
-            className={({ isActive }) => (isActive ? "selected" : "")}
-            onClick={toggleSideNav}
-            to="/work"
-          >
-            Work
-          </NavLink>
-        </li>
-        <li role="menuitem">
-          <NavLink
-            className={({ isActive }) => (isActive ? "selected" : "")}
-            onClick={toggleSideNav}
-            to="/contact"
-          >
-            Contact
-          </NavLink>
-        </li>
+        {sideNavMenuLinks.map(({ label, to }) => (
+          <li role="menuitem" key={label}>
+            <NavLink
+              className={({ isActive }) => (isActive ? "selected" : "")}
+              onClick={toggleSideNav}
+              to={to}
+            >
+              {label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
       <i
         aria-label="close sidenav"

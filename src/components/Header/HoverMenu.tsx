@@ -1,34 +1,21 @@
 import { NavLink } from "react-router-dom";
 
 import styles from "./HoverMenu.module.scss";
+import { links } from "./constants";
 
 function Menu(): JSX.Element {
   return (
     <ul className={styles.navLinks} role="group">
-      <li role="menuitem">
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? styles.selected : "")}
-        >
-          About
-        </NavLink>
-      </li>
-      <li role="menuitem">
-        <NavLink
-          to="/work"
-          className={({ isActive }) => (isActive ? styles.selected : "")}
-        >
-          Work
-        </NavLink>
-      </li>
-      <li role="menuitem">
-        <NavLink
-          to="/contact"
-          className={({ isActive }) => (isActive ? styles.selected : "")}
-        >
-          Contact
-        </NavLink>
-      </li>
+      {links.map(({ label, to }) => (
+        <li role="menuitem" key={label}>
+          <NavLink
+            to={to}
+            className={({ isActive }) => (isActive ? styles.selected : "")}
+          >
+            {label}
+          </NavLink>
+        </li>
+      ))}
     </ul>
   );
 }

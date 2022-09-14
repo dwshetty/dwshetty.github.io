@@ -59,7 +59,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://dwshetty.github.io",
+  "homepage": "https://dwshetty.github.io/",
   "devDependencies": {
     "@types/jest": "^28.1.7",
     "@types/node": "^18.7.11",
@@ -87,9 +87,28 @@
   "reactSnap": {
     "include": [
       "/",
-      "/about",
-      "/work",
-      "/contact"
+      "/about/",
+      "/work/",
+      "/contact/"
     ]
+  },
+  "description": "Website for Portfolio of Dwitesh Ramanand Shetty",
+  "keywords": [
+    "Dwitesh Ramanand Shetty",
+    "Dwitesh Shetty",
+    "dwshetty",
+    "personal portfolio website",
+    "html5",
+    "css3",
+    "scss",
+    "javascript",
+    "typescript",
+    "create-react-app",
+    "react-router-dom",
+    "react-snap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwshetty/dwshetty.github.io.git"
   }
 }
