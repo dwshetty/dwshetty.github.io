@@ -63,8 +63,11 @@ function Work(): JSX.Element {
   const professionals: Professional[] = [
     {
       clients: [{ name: "Accenture", url: "https://www.accenture.com/in-en" }],
-      designations: ["Application Development Senior Analyst"],
-      durations: ["Dec '21 - Present"],
+      designations: [
+        "Application Development Senior Analyst",
+        "Application Development Specialist"
+      ],
+      durations: ["Dec '21 - Nov '22", "Dec '22 - Present"],
       location: "Mumbai, Maharashtra, India",
       name: "Accenture Solutions Private Limited"
     },
@@ -77,7 +80,7 @@ function Work(): JSX.Element {
         }
       ],
       designations: ["Software Professional"],
-      durations: ["Mar '20 - Dec '21"],
+      durations: ["Mar '20 - Nov '21"],
       location: "Pune, Maharashtra, India",
       name: "Extentia Information Technology"
     },
