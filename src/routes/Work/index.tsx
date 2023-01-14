@@ -64,10 +64,10 @@ function Work(): JSX.Element {
     {
       clients: [{ name: "Accenture", url: "https://www.accenture.com/in-en" }],
       designations: [
-        "Application Development Senior Analyst",
-        "Application Development Specialist"
+        "Application Development Specialist",
+        "Application Development Senior Analyst"
       ],
-      durations: ["Dec '21 - Nov '22", "Dec '22 - Present"],
+      durations: ["Dec '22 - Present", "Dec '21 - Nov '22"],
       location: "Mumbai, Maharashtra, India",
       name: "Accenture Solutions Private Limited"
     },
