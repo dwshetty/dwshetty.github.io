@@ -22,13 +22,13 @@
     "SideNavMenu.js": "/static/js/SideNavMenu.3ce5f97a.chunk.js",
     "SideNavMenu.js.map": "/static/js/SideNavMenu.3ce5f97a.chunk.js.map",
     "Work.css": "/static/css/Work.fd09243d.chunk.css",
-    "Work.js": "/static/js/Work.f6ea0e49.chunk.js",
-    "Work.js.map": "/static/js/Work.f6ea0e49.chunk.js.map",
+    "Work.js": "/static/js/Work.27c967c0.chunk.js",
+    "Work.js.map": "/static/js/Work.27c967c0.chunk.js.map",
     "main.css": "/static/css/main.8a43e67e.chunk.css",
     "main.js": "/static/js/main.80cddb48.chunk.js",
     "main.js.map": "/static/js/main.80cddb48.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7e705cdd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7e705cdd.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3aa259ea.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3aa259ea.js.map",
     "static/js/11.5766c2f6.chunk.js": "/static/js/11.5766c2f6.chunk.js",
     "static/js/11.5766c2f6.chunk.js.map": "/static/js/11.5766c2f6.chunk.js.map",
     "index.html": "/index.html",
@@ -45,7 +45,7 @@
     "static/js/11.5766c2f6.chunk.js.LICENSE.txt": "/static/js/11.5766c2f6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e705cdd.js",
+    "static/js/runtime-main.3aa259ea.js",
     "static/js/11.5766c2f6.chunk.js",
     "static/css/main.8a43e67e.chunk.css",
     "static/js/main.80cddb48.chunk.js"
