@@ -90,6 +90,10 @@
       "/about/",
       "/work/",
       "/contact/"
+    ],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
     ]
   },
   "description": "Website for Portfolio of Dwitesh Ramanand Shetty",
