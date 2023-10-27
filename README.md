@@ -1,4 +1,6 @@
-[![CI](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/main.yml)
+[![CI](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/ci.yml)
+[![CD](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/cd.yml/badge.svg)](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/cd.yml)
+[![pages-build-deployment](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/dwshetty/dwshetty.github.io/actions/workflows/pages/pages-build-deployment)
 
 # dwshetty.github.io
 
