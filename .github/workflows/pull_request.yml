@@ -37,7 +37,7 @@ jobs:
           echo Dependencies installed successfully!
 
       - name: Load environment variables
-        uses: xom9ikk/dotenv@v2
+        uses: xom9ikk/dotenv@v2.2.0
         with:
           path: ./
           mode: development
@@ -51,9 +51,9 @@ jobs:
     
       - name: Create new build
         env:
-          REACT_APP_HOST_URL: ${{ secrets.REACT_APP_HOST_URL }}
-          REACT_APP_WEBSITE_TITLE: ${{ secrets.REACT_APP_WEBSITE_TITLE }}
-          REACT_APP_WEBSITE_DESCRIPTION: ${{ secrets.REACT_APP_WEBSITE_DESCRIPTION }}
+          REACT_APP_HOST_URL: ${{ env.REACT_APP_HOST_URL }}
+          REACT_APP_WEBSITE_TITLE: ${{ env.REACT_APP_WEBSITE_TITLE }}
+          REACT_APP_WEBSITE_DESCRIPTION: ${{ env.REACT_APP_WEBSITE_DESCRIPTION }}
         run: |
           npm run build
           echo Build created successfully!
