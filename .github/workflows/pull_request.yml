@@ -36,6 +36,19 @@ jobs:
           npm ci
           echo Dependencies installed successfully!
 
+      - name: Load environment variables
+        uses: xom9ikk/dotenv@v2
+        with:
+          path: ./
+          mode: development
+          load-mode: strict
+      
+      - name: Verify environment variables
+        run: |
+          echo Variable 1: ${{ env.REACT_APP_HOST_URL }}
+          echo Variable 2: ${{ env.REACT_APP_WEBSITE_TITLE }}
+          echo Variable 3: ${{ env.REACT_APP_WEBSITE_DESCRIPTION }}
+    
       - name: Create new build
         env:
           REACT_APP_HOST_URL: ${{ secrets.REACT_APP_HOST_URL }}
