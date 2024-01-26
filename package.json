@@ -89,9 +89,9 @@
   "reactSnap": {
     "include": [
       "/",
-      "/about/",
-      "/work/",
-      "/contact/"
+      "/about",
+      "/work",
+      "/contact"
     ],
     "puppeteerArgs": [
       "--no-sandbox",
