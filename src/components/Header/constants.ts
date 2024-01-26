@@ -7,15 +7,15 @@ export interface ILink {
 export const links: ILink[] = [
   {
     label: "About",
-    to: "/about/"
+    to: "/about"
   },
   {
     label: "Work",
-    to: "/work/"
+    to: "/work"
   },
   {
     label: "Contact",
-    to: "/contact/"
+    to: "/contact"
   }
 ];
 export const sideNavMenuLinks = [
