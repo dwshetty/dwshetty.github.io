@@ -36,8 +36,7 @@
     "clean:gh-cache": "rm -rf node_modules/.cache/gh-pages",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master-build -d build",
-    "postbuild": "react-snap",
-    "prebuild": "node src/updateSitemap.mjs"
+    "postbuild": "node src/updateSitemap.mjs && react-snap"
   },
   "eslintConfig": {
     "extends": [

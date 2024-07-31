@@ -7,7 +7,7 @@ function getCurrentDateTime() {
 }
 
 function updateSitemap() {
-  const sitemapFilePath = `${process.cwd()}/public/sitemap.xml`;
+  const sitemapFilePath = `${process.cwd()}/build/sitemap.xml`;
 
   const fileData = readFileSync(sitemapFilePath, "utf-8");
 
