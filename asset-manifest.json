@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c59ddf1.css",
+    "main.css": "/static/css/main.d0408231.css",
     "main.js": "/static/js/main.64a77c82.js",
     "ScrollToTop.js": "/static/js/ScrollToTop.636f1bc8.chunk.js",
     "HoverMenu.css": "/static/css/HoverMenu.be83b319.chunk.css",
@@ -19,7 +19,7 @@
     "static/js/270.465be39d.chunk.js": "/static/js/270.465be39d.chunk.js",
     "service-worker.js": "/service-worker.js",
     "index.html": "/index.html",
-    "main.5c59ddf1.css.map": "/static/css/main.5c59ddf1.css.map",
+    "main.d0408231.css.map": "/static/css/main.d0408231.css.map",
     "main.64a77c82.js.map": "/static/js/main.64a77c82.js.map",
     "ScrollToTop.636f1bc8.chunk.js.map": "/static/js/ScrollToTop.636f1bc8.chunk.js.map",
     "HoverMenu.be83b319.chunk.css.map": "/static/css/HoverMenu.be83b319.chunk.css.map",
@@ -38,7 +38,7 @@
     "270.465be39d.chunk.js.map": "/static/js/270.465be39d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c59ddf1.css",
+    "static/css/main.d0408231.css",
     "static/js/main.64a77c82.js"
   ]
 }
