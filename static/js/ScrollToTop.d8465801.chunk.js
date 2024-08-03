@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdwshetty=self.webpackChunkdwshetty||[]).push([[27],{994:(t,e,s)=>{s.r(e),s.d(e,{default:()=>c});var n=s(791),u=s(689);const c=function(){const{pathname:t}=(0,u.TH)();return(0,n.useEffect)((()=>{window.scrollTo(0,0)}),[t]),null}}}]);
+//# sourceMappingURL=ScrollToTop.d8465801.chunk.js.map
