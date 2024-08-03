@@ -2,7 +2,6 @@
   "recommendations": [
     "christian-kohler.npm-intellisense",
     "christian-kohler.path-intellisense",
-    "esbenp.prettier-vscode",
     "eamodio.gitlens",
     "DotJoshJohnson.xml"
   ]

@@ -39,6 +39,7 @@ module.exports = {
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "react/jsx-uses-react": "warn",
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
     "@typescript-eslint/explicit-module-boundary-types": "warn"
   },
 };

@@ -8,7 +8,7 @@ function RevealingCard({
   style,
   secondaryIconClassName,
   iconClassName,
-  iconType = "fa",
+  iconType = "fa"
 }: IRevealingCard): JSX.Element {
   return (
     <a
@@ -21,7 +21,7 @@ function RevealingCard({
       <span
         style={{
           background: style.background || style.color,
-          color: "#fff",
+          color: "#fff"
         }}
       >
         <i className={`${iconType} fa-2x fa-${secondaryIconClassName}`} />

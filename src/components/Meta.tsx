@@ -7,12 +7,13 @@ interface IMeta {
   suffixDescription?: string;
   suffixTitle?: string;
 }
+
 const Meta = ({
   pageTitle = "",
   pageDescription = "",
   prefixTitle = "",
   suffixTitle = "",
-  suffixDescription = "",
+  suffixDescription = ""
 }: IMeta): JSX.Element => {
   const title = `${prefixTitle ? `${prefixTitle} | ` : ""}${
     pageTitle ||
