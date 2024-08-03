@@ -8,11 +8,11 @@ interface IMeta {
   suffixTitle?: string;
 }
 const Meta = ({
-  pageTitle,
-  pageDescription,
-  prefixTitle,
-  suffixTitle,
-  suffixDescription
+  pageTitle = "",
+  pageDescription = "",
+  prefixTitle = "",
+  suffixTitle = "",
+  suffixDescription = "",
 }: IMeta): JSX.Element => {
   const title = `${prefixTitle ? `${prefixTitle} | ` : ""}${
     pageTitle ||
@@ -40,14 +40,6 @@ const Meta = ({
       <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
-};
-
-Meta.defaultProps = {
-  pageTitle: "",
-  pageDescription: "",
-  prefixTitle: "",
-  suffixTitle: "",
-  suffixDescription: ""
 };
 
 export default Meta;

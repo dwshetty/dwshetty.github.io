@@ -4,11 +4,11 @@ import styles from "./styles.module.scss";
 function RevealingCard({
   name,
   href,
-  disabled,
+  disabled = false,
   style,
   secondaryIconClassName,
   iconClassName,
-  iconType = "fa"
+  iconType = "fa",
 }: IRevealingCard): JSX.Element {
   return (
     <a
@@ -21,7 +21,7 @@ function RevealingCard({
       <span
         style={{
           background: style.background || style.color,
-          color: "#fff"
+          color: "#fff",
         }}
       >
         <i className={`${iconType} fa-2x fa-${secondaryIconClassName}`} />
@@ -33,9 +33,5 @@ function RevealingCard({
     </a>
   );
 }
-
-RevealingCard.defaultProps = {
-  disabled: false
-};
 
 export default RevealingCard;
