@@ -53,9 +53,9 @@ $animationDelay: 1s;
         opacity: 1;
         color: white;
         background-color: white;
-        // animation: toggle 5s linear 4s infinite normal;
-        animation: toggle 5s linear $animationDelay infinite normal;
+        animation: toggle 8s linear $animationDelay infinite normal;
         left: 100%;
+        will-change: transform;
 
         .cursor {
           position: relative;
@@ -66,29 +66,13 @@ $animationDelay: 1s;
         }
 
         .overlay {
-          display: flex;
-          width: 212px;
+          width: 210px;
         }
       }
     }
   }
 
   .pointsWrapper {
-    // ul {
-    //   li {
-    //     transform: translateX(200%);
-    //     animation: slide-from-right 2s linear 1s 1 forwards;
-    //   }
-
-    //   li:first-child {
-    //     animation-delay: 0s;
-    //   }
-
-    //   li:last-child {
-    //     animation-delay: 2s;
-    //   }
-    // }
-
     blockquote {
       color: #000;
       text-shadow: 1px 1px 2px gold;
@@ -151,15 +135,15 @@ $animationDelay: 1s;
 
 @keyframes toggle {
   0%,
-  10%,
-  90%,
+  15%,
+  85%,
   100% {
-    left: 100%;
+    transform: translateX(0%)
   }
 
   33%,
   67% {
-    left: 0%;
+    transform: translateX(calc(-100% + 7.5px))
   }
 }
 
@@ -168,12 +152,6 @@ $animationDelay: 1s;
     opacity: 0;
   }
 }
-
-// @keyframes slide-from-right {
-//   to {
-//     transform: translateX(0%);
-//   }
-// }
 
 @keyframes glowing {
   from {
