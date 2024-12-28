@@ -38,10 +38,7 @@ function Home(): JSX.Element {
             </span>
             <span className={styles.webDeveloperOverlay} data-nosnippet>
               <span className={styles.cursor}>|</span>
-              <span className={styles.overlay}>
-                <span>Web Developer&nbsp;</span>
-                <i className="fas fa-laptop-code" />
-              </span>
+              <span className={styles.overlay} />
             </span>
           </span>
         </h2>
